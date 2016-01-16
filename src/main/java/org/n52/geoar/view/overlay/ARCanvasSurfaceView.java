@@ -13,17 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view.overlay;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.ARObject;
-import org.n52.geoar.ar.view.ARView;
-import org.n52.geoar.newdata.PluginActivityContext;
-import org.n52.geoar.tracking.camera.RealityCamera.CameraUpdateListener;
-import org.n52.geoar.tracking.location.LocationHandler;
+package main.java.org.n52.geoar.view.overlay;
 
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -37,11 +27,20 @@ import android.graphics.Shader;
 import android.location.Location;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
+
+import org.n52.geoar.R;
+import org.n52.geoar.ar.view.ARObject;
+import org.n52.geoar.ar.view.ARView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.org.n52.geoar.newdata.PluginActivityContext;
+import main.java.org.n52.geoar.tracking.camera.RealityCamera;
+import main.java.org.n52.geoar.tracking.location.LocationHandler;
 
 // TODO XXX
-public class ARCanvasSurfaceView extends View implements CameraUpdateListener {
+public class ARCanvasSurfaceView extends View implements RealityCamera.CameraUpdateListener {
 
 	private static final float SIZE = 40;
 	private final Location lastLocation = LocationHandler

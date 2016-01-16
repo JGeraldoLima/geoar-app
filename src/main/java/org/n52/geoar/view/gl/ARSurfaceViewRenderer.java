@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view.gl;
+package main.java.org.n52.geoar.view.gl;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
+import android.location.Location;
+import android.opengl.GLES20;
+import android.opengl.GLSurfaceView;
+import android.opengl.GLSurfaceView.Renderer;
+import android.opengl.Matrix;
 
 import org.n52.geoar.ar.view.ARObject;
 import org.n52.geoar.tracking.camera.RealityCamera;
@@ -29,11 +29,11 @@ import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
 import org.n52.geoar.view.geoar.gl.mode.Texture;
 import org.n52.geoar.view.geoar.gl.mode.features.NewGridFeature;
 
-import android.location.Location;
-import android.opengl.GLES20;
-import android.opengl.GLSurfaceView;
-import android.opengl.GLSurfaceView.Renderer;
-import android.opengl.Matrix;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
 
 /**
  * 

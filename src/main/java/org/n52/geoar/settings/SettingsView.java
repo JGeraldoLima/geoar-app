@@ -13,22 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.settings;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.TreeMap;
-
-import org.n52.geoar.newdata.Annotations.PostSettingsChanged;
-import org.n52.geoar.newdata.Annotations.Setting;
-import org.n52.geoar.newdata.Annotations.Settings.Group;
-import org.n52.geoar.newdata.Annotations.Settings.Name;
-import org.n52.geoar.R;
+package main.java.org.n52.geoar.settings;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -36,6 +21,20 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.n52.geoar.R;
+import org.n52.geoar.newdata.Annotations.Setting;
+import org.n52.geoar.newdata.Annotations.Settings.Group;
+import org.n52.geoar.newdata.Annotations.Settings.Name;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+import main.java.org.n52.geoar.settings.SettingsViewField;
 
 public class SettingsView extends LinearLayout {
 

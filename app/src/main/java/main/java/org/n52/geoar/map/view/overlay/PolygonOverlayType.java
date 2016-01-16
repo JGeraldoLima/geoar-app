@@ -15,16 +15,16 @@
  */
 package org.n52.geoar.map.view.overlay;
 
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.SpatialEntity2;
-import org.n52.geoar.newdata.Visualization.FeatureVisualization;
-
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.Polygon;
+
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.SpatialEntity2;
+import org.n52.geoar.newdata.Visualization.FeatureVisualization;
 
 /**
  * 

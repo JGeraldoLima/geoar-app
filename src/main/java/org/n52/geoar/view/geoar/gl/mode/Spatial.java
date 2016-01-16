@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view.geoar.gl.mode;
+package main.java.org.n52.geoar.view.geoar.gl.mode;
 
-import org.n52.geoar.ar.view.gl.GLESCamera;
-
+import main.java.org.n52.geoar.view.gl.GLESCamera;
 
 public abstract class Spatial {
 

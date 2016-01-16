@@ -15,10 +15,6 @@
  */
 package org.n52.geoar.newdata;
 
-import java.util.List;
-
-import org.n52.geoar.R;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
@@ -31,6 +27,10 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.n52.geoar.R;
+
+import java.util.List;
 
 public class PluginGridAdapter<T extends PluginHolder> extends BaseAdapter {
 

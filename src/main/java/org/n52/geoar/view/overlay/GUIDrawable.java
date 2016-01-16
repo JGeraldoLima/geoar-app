@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view.overlay;
+package main.java.org.n52.geoar.view.overlay;
 
 import android.graphics.Canvas;
 import android.graphics.Matrix;

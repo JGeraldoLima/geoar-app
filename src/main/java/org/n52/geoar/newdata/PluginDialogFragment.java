@@ -13,10 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
-
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.IntroController;
+package main.java.org.n52.geoar.newdata;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -25,11 +22,15 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.n52.geoar.R;
+import org.n52.geoar.ar.view.IntroController;
+
+import main.java.org.n52.geoar.newdata.PluginHolder;
 
 public class PluginDialogFragment extends DialogFragment {
 

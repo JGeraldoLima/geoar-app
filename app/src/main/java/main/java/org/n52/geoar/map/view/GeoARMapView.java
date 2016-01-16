@@ -15,9 +15,9 @@
  */
 package org.n52.geoar.map.view;
 
-import org.mapsforge.android.maps.MapView;
-
 import android.content.Context;
+
+import org.mapsforge.android.maps.MapView;
 
 /**
  * Extension of {@link MapView} by a zoom event.

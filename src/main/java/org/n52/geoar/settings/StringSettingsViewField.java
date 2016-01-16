@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.settings;
-
-import java.lang.reflect.Field;
-
-import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+package main.java.org.n52.geoar.settings;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.EditText;
+
+import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+
+import java.lang.reflect.Field;
 
 public class StringSettingsViewField extends EditText implements SettingsViewField<String> {
 

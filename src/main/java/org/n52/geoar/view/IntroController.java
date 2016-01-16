@@ -13,13 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-
-import org.n52.geoar.R;
+package main.java.org.n52.geoar.view;
 
 import android.app.Activity;
 import android.util.SparseArray;
@@ -29,6 +23,12 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout.LayoutParams;
+
+import org.n52.geoar.R;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * 

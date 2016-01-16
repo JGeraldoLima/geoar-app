@@ -15,28 +15,6 @@
  */
 package org.n52.geoar.map.view;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.mapsforge.android.maps.MapController;
-import org.mapsforge.android.maps.mapgenerator.tiledownloader.MapnikTileDownloader;
-import org.mapsforge.android.maps.overlay.ArrayCircleOverlay;
-import org.mapsforge.android.maps.overlay.OverlayCircle;
-import org.mapsforge.core.GeoPoint;
-import org.n52.geoar.R;
-import org.n52.geoar.map.view.GeoARMapView.OnZoomChangeListener;
-import org.n52.geoar.map.view.overlay.DataSourcesOverlay;
-import org.n52.geoar.map.view.overlay.DataSourcesOverlay.OnOverlayItemTapListener;
-import org.n52.geoar.map.view.overlay.OverlayType;
-import org.n52.geoar.newdata.CheckList;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.newdata.DataSourceHolder;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.PluginActivityContext;
-import org.n52.geoar.newdata.PluginLoader;
-import org.n52.geoar.tracking.location.LocationHandler;
-import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -59,6 +37,28 @@ import android.widget.FrameLayout.LayoutParams;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.MenuItem;
 import com.vividsolutions.jts.geom.Geometry;
+
+import org.mapsforge.android.maps.MapController;
+import org.mapsforge.android.maps.mapgenerator.tiledownloader.MapnikTileDownloader;
+import org.mapsforge.android.maps.overlay.ArrayCircleOverlay;
+import org.mapsforge.android.maps.overlay.OverlayCircle;
+import org.mapsforge.core.GeoPoint;
+import org.n52.geoar.R;
+import org.n52.geoar.map.view.GeoARMapView.OnZoomChangeListener;
+import org.n52.geoar.map.view.overlay.DataSourcesOverlay;
+import org.n52.geoar.map.view.overlay.DataSourcesOverlay.OnOverlayItemTapListener;
+import org.n52.geoar.map.view.overlay.OverlayType;
+import org.n52.geoar.newdata.CheckList;
+import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
+import org.n52.geoar.newdata.DataSourceHolder;
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.PluginActivityContext;
+import org.n52.geoar.newdata.PluginLoader;
+import org.n52.geoar.tracking.location.LocationHandler;
+import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 

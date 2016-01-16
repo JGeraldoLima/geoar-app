@@ -13,11 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view.overlay;
-
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.SpatialEntity2;
-import org.n52.geoar.newdata.Visualization.FeatureVisualization;
+package main.java.org.n52.geoar.view.overlay;
 
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -25,6 +21,10 @@ import android.graphics.Paint.Style;
 
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.Polygon;
+
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.SpatialEntity2;
+import org.n52.geoar.newdata.Visualization.FeatureVisualization;
 
 /**
  * 

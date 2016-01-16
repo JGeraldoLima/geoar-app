@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view.overlay;
+package main.java.org.n52.geoar.view.overlay;
+
+import com.vividsolutions.jts.geom.Geometry;
 
 import org.n52.geoar.newdata.DataSourceInstanceHolder;
 import org.n52.geoar.newdata.SpatialEntity2;
 import org.n52.geoar.newdata.Visualization;
-
-import com.vividsolutions.jts.geom.Geometry;
 
 /**
  * 

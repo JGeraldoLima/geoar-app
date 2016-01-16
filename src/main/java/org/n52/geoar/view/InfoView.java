@@ -13,19 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import main.java.org.n52.geoar.GeoARApplication;
-import org.n52.geoar.R;
+package main.java.org.n52.geoar.view;
 
 import android.content.Context;
 import android.os.Handler;
@@ -37,6 +25,19 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import org.n52.geoar.R;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 /**
  * Core information bar. Takes records of objects which currently try to show

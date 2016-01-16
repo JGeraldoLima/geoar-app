@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.tracking.camera;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import main.java.org.n52.geoar.GeoARApplication;
+package main.java.org.n52.geoar.tracking.camera;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.hardware.Camera.Size;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 /**
  * This class sums up all relevant camera parameters and also informs listeners

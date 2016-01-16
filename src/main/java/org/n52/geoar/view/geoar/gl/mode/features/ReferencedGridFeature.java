@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view.geoar.gl.mode.features;
-
-import org.n52.geoar.view.geoar.gl.mode.BilligerColorShader;
-import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
+package main.java.org.n52.geoar.view.geoar.gl.mode.features;
 
 import android.opengl.GLES20;
 import android.opengl.Matrix;
+
+import org.n52.geoar.view.geoar.gl.mode.BilligerColorShader;
+import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
 
 public class ReferencedGridFeature extends RenderFeature2 {
 

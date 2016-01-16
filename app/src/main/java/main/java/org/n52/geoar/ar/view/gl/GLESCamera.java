@@ -15,12 +15,11 @@
  */
 package org.n52.geoar.ar.view.gl;
 
-import java.util.Arrays;
+import android.opengl.Matrix;
 
 import org.n52.geoar.tracking.camera.RealityCamera;
-import org.n52.geoar.view.geoar.Settings;
 
-import android.opengl.Matrix;
+import java.util.Arrays;
 
 /**
  * 

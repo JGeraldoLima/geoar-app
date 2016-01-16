@@ -15,9 +15,6 @@
  */
 package org.n52.geoar.ar.view;
 
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.IntroController.Task;
-
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -37,6 +34,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import org.n52.geoar.R;
+import org.n52.geoar.ar.view.IntroController.Task;
 
 /**
  * 

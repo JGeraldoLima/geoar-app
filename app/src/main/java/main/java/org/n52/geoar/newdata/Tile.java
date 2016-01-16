@@ -15,13 +15,13 @@
  */
 package org.n52.geoar.newdata;
 
-import org.n52.geoar.alg.proj.MercatorProj;
-import org.n52.geoar.alg.proj.MercatorRect;
-import org.n52.geoar.utils.GeoLocationRect;
+import android.graphics.RectF;
 
 import com.vividsolutions.jts.geom.Envelope;
 
-import android.graphics.RectF;
+import org.n52.geoar.alg.proj.MercatorProj;
+import org.n52.geoar.alg.proj.MercatorRect;
+import org.n52.geoar.utils.GeoLocationRect;
 
 /**
  * A tile in the spatial index, based on {@link MercatorProj}

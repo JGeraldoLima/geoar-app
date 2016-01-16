@@ -13,18 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.n52.geoar.ar.view.gl.ARSurfaceView;
-import org.n52.geoar.ar.view.overlay.ARCanvasSurfaceView;
-import org.n52.geoar.tracking.camera.CameraView;
-import org.n52.geoar.tracking.camera.RealityCamera;
-import org.n52.geoar.tracking.camera.RealityCamera.CameraUpdateListener;
+package main.java.org.n52.geoar.view;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -32,6 +21,17 @@ import android.content.pm.ConfigurationInfo;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
+
+import org.n52.geoar.ar.view.gl.ARSurfaceView;
+import org.n52.geoar.ar.view.overlay.ARCanvasSurfaceView;
+import org.n52.geoar.tracking.camera.CameraView;
+import org.n52.geoar.tracking.camera.RealityCamera;
+import org.n52.geoar.tracking.camera.RealityCamera.CameraUpdateListener;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 

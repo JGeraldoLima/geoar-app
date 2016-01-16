@@ -13,18 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.tracking.location;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.n52.geoar.utils.GeoLocation;
-import main.java.org.n52.geoar.GeoARApplication;
-import org.n52.geoar.R;
-import org.n52.geoar.view.InfoView;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package main.java.org.n52.geoar.tracking.location;
 
 import android.content.Context;
 import android.location.Location;
@@ -34,6 +23,18 @@ import android.location.LocationProvider;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+
+import org.n52.geoar.R;
+import org.n52.geoar.utils.GeoLocation;
+import org.n52.geoar.view.InfoView;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 /**
  * Helper class to allow an safe and common way to receive location updates from

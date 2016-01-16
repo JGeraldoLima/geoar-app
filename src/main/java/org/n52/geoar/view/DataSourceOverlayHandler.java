@@ -13,10 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view;
+package main.java.org.n52.geoar.view;
 
-import java.util.ArrayList;
-import java.util.List;
+import android.graphics.Point;
+import android.os.Handler;
+
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.LineString;
+import com.vividsolutions.jts.geom.Polygon;
 
 import org.mapsforge.android.maps.MapView;
 import org.mapsforge.android.maps.Projection;
@@ -40,12 +44,8 @@ import org.n52.geoar.view.geoar.Settings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import android.graphics.Point;
-import android.os.Handler;
-
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.Polygon;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Holger Hopmann

@@ -13,19 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view.overlay;
-
-import java.util.List;
-
-import org.mapsforge.android.maps.Projection;
-import org.mapsforge.android.maps.overlay.Overlay;
-import org.n52.geoar.map.view.overlay.DataSourcesOverlay.OnOverlayItemTapListener;
+package main.java.org.n52.geoar.view.overlay;
 
 import android.graphics.Canvas;
 import android.graphics.Point;
 
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
+
+import org.mapsforge.android.maps.Projection;
+import org.mapsforge.android.maps.overlay.Overlay;
+
+import java.util.List;
 
 /**
  * 

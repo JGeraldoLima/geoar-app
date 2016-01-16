@@ -15,10 +15,12 @@
  */
 package org.n52.geoar.ar.view;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import android.app.ActivityManager;
+import android.content.Context;
+import android.content.pm.ConfigurationInfo;
+import android.os.Build;
+import android.util.AttributeSet;
+import android.widget.FrameLayout;
 
 import org.n52.geoar.ar.view.gl.ARSurfaceView;
 import org.n52.geoar.ar.view.overlay.ARCanvasSurfaceView;
@@ -26,12 +28,10 @@ import org.n52.geoar.tracking.camera.CameraView;
 import org.n52.geoar.tracking.camera.RealityCamera;
 import org.n52.geoar.tracking.camera.RealityCamera.CameraUpdateListener;
 
-import android.app.ActivityManager;
-import android.content.Context;
-import android.content.pm.ConfigurationInfo;
-import android.os.Build;
-import android.util.AttributeSet;
-import android.widget.FrameLayout;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 

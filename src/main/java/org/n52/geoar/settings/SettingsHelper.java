@@ -13,7 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.settings;
+package main.java.org.n52.geoar.settings;
+
+import android.content.Context;
+import android.text.InputType;
+
+import org.n52.geoar.newdata.Annotations.DefaultSetting;
+import org.n52.geoar.newdata.Annotations.DefaultSettingsSet;
+import org.n52.geoar.newdata.Annotations.PostSettingsChanged;
+import org.n52.geoar.newdata.Annotations.Setting;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -21,19 +29,10 @@ import java.io.ObjectOutputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
 
-import org.n52.geoar.newdata.Annotations.DefaultSetting;
-import org.n52.geoar.newdata.Annotations.DefaultSettingsSet;
-import org.n52.geoar.newdata.Annotations.PostSettingsChanged;
-import org.n52.geoar.newdata.Annotations.Setting;
-
-import android.content.Context;
-import android.text.InputType;
+import main.java.org.n52.geoar.settings.SettingsViewField;
 
 public class SettingsHelper {
 

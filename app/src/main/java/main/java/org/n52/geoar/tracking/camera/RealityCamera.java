@@ -15,15 +15,15 @@
  */
 package org.n52.geoar.tracking.camera;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import main.java.org.n52.geoar.GeoARApplication;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.hardware.Camera.Size;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 /**
  * This class sums up all relevant camera parameters and also informs listeners

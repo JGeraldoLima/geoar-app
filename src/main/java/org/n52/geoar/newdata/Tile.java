@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
+
+import android.graphics.RectF;
+
+import com.vividsolutions.jts.geom.Envelope;
 
 import org.n52.geoar.alg.proj.MercatorProj;
 import org.n52.geoar.alg.proj.MercatorRect;
 import org.n52.geoar.utils.GeoLocationRect;
-
-import com.vividsolutions.jts.geom.Envelope;
-
-import android.graphics.RectF;
 
 /**
  * A tile in the spatial index, based on {@link MercatorProj}

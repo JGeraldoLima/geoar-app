@@ -15,10 +15,6 @@
  */
 package org.n52.geoar.tracking.camera;
 
-import java.util.List;
-
-import org.n52.geoar.R;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.hardware.Camera;
@@ -31,6 +27,10 @@ import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
+
+import org.n52.geoar.R;
+
+import java.util.List;
 
 /**
  * A View which encapsulates a camera preview. Takes care of freeing all

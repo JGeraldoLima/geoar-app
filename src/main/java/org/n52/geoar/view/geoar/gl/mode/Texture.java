@@ -13,7 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view.geoar.gl.mode;
+package main.java.org.n52.geoar.view.geoar.gl.mode;
+
+import android.graphics.Bitmap;
+import android.opengl.GLES20;
+import android.opengl.GLUtils;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -21,10 +25,6 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import android.graphics.Bitmap;
-import android.opengl.GLES20;
-import android.opengl.GLUtils;
 
 public class Texture {
 	private AtomicInteger textureHandle;

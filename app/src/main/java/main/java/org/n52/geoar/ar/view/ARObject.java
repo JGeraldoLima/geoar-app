@@ -15,20 +15,6 @@
  */
 package org.n52.geoar.ar.view;
 
-import java.util.List;
-
-import javax.microedition.khronos.opengles.GL10;
-
-import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OpenGLCallable;
-import org.n52.geoar.ar.view.gl.GLESCamera;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.SpatialEntity2;
-import org.n52.geoar.newdata.Visualization;
-import org.n52.geoar.newdata.Visualization.FeatureVisualization;
-import org.n52.geoar.newdata.vis.DataSourceVisualization.DataSourceVisualizationCanvas;
-import org.n52.geoar.tracking.location.LocationHandler;
-import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
-
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -42,6 +28,20 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.RelativeLayout;
 
 import com.vividsolutions.jts.geom.Geometry;
+
+import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OpenGLCallable;
+import org.n52.geoar.ar.view.gl.GLESCamera;
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.SpatialEntity2;
+import org.n52.geoar.newdata.Visualization;
+import org.n52.geoar.newdata.Visualization.FeatureVisualization;
+import org.n52.geoar.newdata.vis.DataSourceVisualization.DataSourceVisualizationCanvas;
+import org.n52.geoar.tracking.location.LocationHandler;
+import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
+
+import java.util.List;
+
+import javax.microedition.khronos.opengles.GL10;
 
 /**
  * 

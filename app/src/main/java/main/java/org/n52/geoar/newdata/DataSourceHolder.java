@@ -15,6 +15,29 @@
  */
 package org.n52.geoar.newdata;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import org.n52.geoar.newdata.Annotations;
+import org.n52.geoar.newdata.Annotations.DefaultInstances;
+import org.n52.geoar.newdata.Annotations.DefaultSettingsSet;
+import org.n52.geoar.newdata.Annotations.PostConstruct;
+import org.n52.geoar.newdata.Annotations.SharedHttpClient;
+import org.n52.geoar.newdata.Annotations.SupportedVisualization;
+import org.n52.geoar.newdata.Annotations.SystemService;
+import org.n52.geoar.newdata.DataSource;
+import org.n52.geoar.newdata.DataSourceInstanceSettingsDialogActivity.SettingsResultListener;
+import org.n52.geoar.newdata.Filter;
+import org.n52.geoar.newdata.Visualization;
+import org.n52.geoar.settings.SettingsHelper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Field;
@@ -25,29 +48,6 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.n52.geoar.newdata.Annotations;
-import org.n52.geoar.newdata.DataSource;
-import org.n52.geoar.newdata.Filter;
-import org.n52.geoar.newdata.Visualization;
-import org.n52.geoar.newdata.Annotations.DefaultInstances;
-import org.n52.geoar.newdata.Annotations.DefaultSettingsSet;
-import org.n52.geoar.newdata.Annotations.PostConstruct;
-import org.n52.geoar.newdata.Annotations.SharedHttpClient;
-import org.n52.geoar.newdata.Annotations.SupportedVisualization;
-import org.n52.geoar.newdata.Annotations.SystemService;
-import org.n52.geoar.newdata.DataSourceInstanceSettingsDialogActivity.SettingsResultListener;
-import org.n52.geoar.settings.SettingsHelper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
-import android.os.Message;
-import android.os.Parcel;
-import android.os.Parcelable;
 
 public class DataSourceHolder implements Parcelable {
 	public static final Parcelable.Creator<DataSourceHolder> CREATOR = new Parcelable.Creator<DataSourceHolder>() {

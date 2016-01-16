@@ -13,36 +13,37 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import org.n52.geoar.utils.GeoLocation;
-import org.n52.geoar.R;
-import org.n52.geoar.newdata.CheckList;
-import org.n52.geoar.newdata.DataSourceHolder;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.PluginLoader;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.tracking.location.LocationHandler;
-import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
+package main.java.org.n52.geoar.view;
 
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.actionbarsherlock.app.SherlockFragment;
 
+import org.n52.geoar.R;
+import org.n52.geoar.newdata.CheckList;
+import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
+import org.n52.geoar.newdata.DataSourceHolder;
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.PluginLoader;
+import org.n52.geoar.tracking.location.LocationHandler;
+import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
+import org.n52.geoar.utils.GeoLocation;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 
  * @author Arne de Wall
  * 
  */
-public class ARFragment extends SherlockFragment implements
+public class ARFragment extends Fragment implements
 		OnLocationUpdateListener {
 
 	private Map<DataSourceInstanceHolder, DataSourceVisualizationHandler> mVisualizationHandlerMap = new HashMap<DataSourceInstanceHolder, DataSourceVisualizationHandler>();

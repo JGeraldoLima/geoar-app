@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
 
 import android.graphics.Bitmap;
 import android.os.Parcel;
@@ -86,7 +86,7 @@ public abstract class PluginHolder implements Parcelable {
 			String identifier = in.readString();
 			if (className.equals(InstalledPluginHolder.class.getName())) {
 				return PluginLoader.getPluginByIdentifier(identifier);
-			} else if (className.equals(PluginDownloadHolder.class.getName())) {
+			} else if (className.equals(org.n52.geoar.newdata.PluginDownloadHolder.class.getName())) {
 				return PluginDownloader.getPluginByIdentifier(identifier);
 			} else {
 				return null;

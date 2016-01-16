@@ -13,12 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view;
-
-import java.lang.reflect.Field;
-
-import org.mapsforge.android.maps.MapActivity;
-import org.mapsforge.android.maps.MapView;
+package main.java.org.n52.geoar.view;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -27,6 +22,11 @@ import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
 import android.content.res.Resources.Theme;
+
+import org.mapsforge.android.maps.MapActivity;
+import org.mapsforge.android.maps.MapView;
+
+import java.lang.reflect.Field;
 
 /**
  * Special {@link MapActivity} extension which wraps an existing

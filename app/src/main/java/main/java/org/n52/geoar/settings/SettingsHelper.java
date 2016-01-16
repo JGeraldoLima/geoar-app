@@ -15,25 +15,22 @@
  */
 package org.n52.geoar.settings;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
+import android.content.Context;
+import android.text.InputType;
 
 import org.n52.geoar.newdata.Annotations.DefaultSetting;
 import org.n52.geoar.newdata.Annotations.DefaultSettingsSet;
 import org.n52.geoar.newdata.Annotations.PostSettingsChanged;
 import org.n52.geoar.newdata.Annotations.Setting;
 
-import android.content.Context;
-import android.text.InputType;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Calendar;
+import java.util.Date;
 
 public class SettingsHelper {
 

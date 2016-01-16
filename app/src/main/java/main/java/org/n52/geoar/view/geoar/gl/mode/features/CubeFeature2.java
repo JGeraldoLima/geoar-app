@@ -15,9 +15,9 @@
  */
 package org.n52.geoar.view.geoar.gl.mode.features;
 
-import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
-
 import android.opengl.GLES20;
+
+import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
 
 /**
  * 

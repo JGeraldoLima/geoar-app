@@ -15,19 +15,6 @@
  */
 package org.n52.geoar.ar.view;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.n52.geoar.utils.GeoLocation;
-import org.n52.geoar.R;
-import org.n52.geoar.newdata.CheckList;
-import org.n52.geoar.newdata.DataSourceHolder;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.PluginLoader;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.tracking.location.LocationHandler;
-import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
-
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
@@ -36,6 +23,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.actionbarsherlock.app.SherlockFragment;
+
+import org.n52.geoar.R;
+import org.n52.geoar.newdata.CheckList;
+import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
+import org.n52.geoar.newdata.DataSourceHolder;
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.PluginLoader;
+import org.n52.geoar.tracking.location.LocationHandler;
+import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
+import org.n52.geoar.utils.GeoLocation;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 

@@ -13,9 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
 
-import org.n52.geoar.utils.DataSourceLoggerFactory;
 import org.slf4j.LoggerFactory;
 
 /**

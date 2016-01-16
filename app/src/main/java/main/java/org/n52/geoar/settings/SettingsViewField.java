@@ -15,9 +15,9 @@
  */
 package org.n52.geoar.settings;
 
-import java.lang.reflect.Field;
-
 import android.view.View;
+
+import java.lang.reflect.Field;
 
 public interface SettingsViewField<T> {
 

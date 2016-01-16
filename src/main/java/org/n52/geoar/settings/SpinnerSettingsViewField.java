@@ -13,21 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.settings;
-
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import org.n52.geoar.newdata.Annotations.Settings.NoValue;
-import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+package main.java.org.n52.geoar.settings;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import org.n52.geoar.newdata.Annotations.Settings.NoValue;
+import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import main.java.org.n52.geoar.settings.SettingsViewField;
 
 public abstract class SpinnerSettingsViewField<T> extends Spinner implements
 		SettingsViewField<T>, android.widget.AdapterView.OnItemSelectedListener {

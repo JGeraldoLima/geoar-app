@@ -13,7 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
+
+import android.os.SystemClock;
+
+import com.vividsolutions.jts.geom.Envelope;
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.index.ItemVisitor;
+import com.vividsolutions.jts.index.quadtree.Quadtree;
+
+import org.n52.geoar.alg.proj.MercatorProj;
+import org.n52.geoar.alg.proj.MercatorRect;
+import org.n52.geoar.utils.GeoLocationRect;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.SocketException;
 import java.util.ArrayList;
@@ -25,20 +38,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.n52.geoar.alg.proj.MercatorProj;
-import org.n52.geoar.alg.proj.MercatorRect;
-import org.n52.geoar.utils.GeoLocationRect;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import android.os.SystemClock;
-
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.index.ItemVisitor;
-import com.vividsolutions.jts.index.quadtree.Quadtree;
 
 /**
  * Interface to request data from a specific {@link DataSource}. Builds an

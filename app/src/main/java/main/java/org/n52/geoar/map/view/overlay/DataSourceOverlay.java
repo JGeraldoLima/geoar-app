@@ -15,17 +15,17 @@
  */
 package org.n52.geoar.map.view.overlay;
 
-import java.util.List;
-
-import org.mapsforge.android.maps.Projection;
-import org.mapsforge.android.maps.overlay.Overlay;
-import org.n52.geoar.map.view.overlay.DataSourcesOverlay.OnOverlayItemTapListener;
-
 import android.graphics.Canvas;
 import android.graphics.Point;
 
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
+
+import org.mapsforge.android.maps.Projection;
+import org.mapsforge.android.maps.overlay.Overlay;
+import org.n52.geoar.map.view.overlay.DataSourcesOverlay.OnOverlayItemTapListener;
+
+import java.util.List;
 
 /**
  * 

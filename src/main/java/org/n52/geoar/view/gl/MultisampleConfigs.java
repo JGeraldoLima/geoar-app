@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view.gl;
+package main.java.org.n52.geoar.view.gl;
+
+import android.opengl.GLSurfaceView;
+import android.util.Log;
 
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.egl.EGLDisplay;
-
-import android.opengl.GLSurfaceView;
-import android.util.Log;
 
 public class MultisampleConfigs implements GLSurfaceView.EGLConfigChooser {
 

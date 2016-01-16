@@ -13,10 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view;
+package main.java.org.n52.geoar.view;
 
-import java.util.HashMap;
-import java.util.Map;
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.location.Location;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.Fragment;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnLayoutChangeListener;
+import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
+import android.widget.FrameLayout.LayoutParams;
+
+import com.vividsolutions.jts.geom.Geometry;
 
 import org.mapsforge.android.maps.MapController;
 import org.mapsforge.android.maps.mapgenerator.tiledownloader.MapnikTileDownloader;
@@ -37,35 +56,12 @@ import org.n52.geoar.newdata.PluginLoader;
 import org.n52.geoar.tracking.location.LocationHandler;
 import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
 
-import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Paint.Style;
-import android.location.Location;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Handler;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.View.OnLayoutChangeListener;
-import android.view.View.OnTouchListener;
-import android.view.ViewGroup;
-import android.widget.FrameLayout.LayoutParams;
-
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.view.MenuItem;
-import com.vividsolutions.jts.geom.Geometry;
-
 /**
  * 
  * @author Arne de Wall <a.dewall@52North.org>
  *
  */
-public class MapFragment extends SherlockFragment {
+public class MapFragment extends Fragment {
 
 	private GeoARMapView mapView;
 

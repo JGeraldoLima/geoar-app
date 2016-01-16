@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view;
-
-import org.mapsforge.android.maps.MapView;
+package main.java.org.n52.geoar.view;
 
 import android.content.Context;
+
+import org.mapsforge.android.maps.MapView;
 
 /**
  * Extension of {@link MapView} by a zoom event.

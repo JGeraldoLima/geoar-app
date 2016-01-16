@@ -15,15 +15,6 @@
  */
 package org.n52.geoar.newdata;
 
-import java.util.List;
-
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.IntroController;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.newdata.CheckList.OnItemChangedListenerWrapper;
-import org.n52.geoar.newdata.PluginDownloader.OnDataSourceResultListener;
-import org.n52.geoar.newdata.PluginGridAdapter.OnItemCheckedListener;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -44,6 +35,15 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+
+import org.n52.geoar.R;
+import org.n52.geoar.ar.view.IntroController;
+import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
+import org.n52.geoar.newdata.CheckList.OnItemChangedListenerWrapper;
+import org.n52.geoar.newdata.PluginDownloader.OnDataSourceResultListener;
+import org.n52.geoar.newdata.PluginGridAdapter.OnItemCheckedListener;
+
+import java.util.List;
 
 /**
  * Fragment for managing and downloading data sources to use within the

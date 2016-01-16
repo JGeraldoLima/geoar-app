@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view.geoar.gl.mode.features;
+package main.java.org.n52.geoar.view.geoar.gl.mode.features;
+
+import android.opengl.GLES20;
+import android.opengl.Matrix;
 
 import org.n52.geoar.view.geoar.gl.mode.BilligerColorShader;
 import org.n52.geoar.view.geoar.gl.mode.FeatureShader;
 import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import android.opengl.GLES20;
-import android.opengl.Matrix;
 
 public class HeightMapFeature extends RenderFeature2 {
 

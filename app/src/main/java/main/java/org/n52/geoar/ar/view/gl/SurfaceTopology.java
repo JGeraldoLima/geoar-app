@@ -15,9 +15,9 @@
  */
 package org.n52.geoar.ar.view.gl;
 
-import org.n52.geoar.tracking.camera.RealityCamera;
-
 import android.opengl.Matrix;
+
+import org.n52.geoar.tracking.camera.RealityCamera;
 
 public class SurfaceTopology {
 	

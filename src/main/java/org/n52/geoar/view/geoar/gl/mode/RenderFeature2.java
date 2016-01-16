@@ -13,7 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view.geoar.gl.mode;
+package main.java.org.n52.geoar.view.geoar.gl.mode;
+
+import android.graphics.Bitmap;
+import android.opengl.GLES20;
+import android.opengl.GLU;
+import android.opengl.Matrix;
+
+import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OnInitializeInGLThread;
+import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OpenGLCallable;
+import org.n52.geoar.newdata.vis.DataSourceVisualization.DataSourceVisualizationGL;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
@@ -25,16 +34,6 @@ import java.util.Stack;
 import java.util.concurrent.Callable;
 
 import javax.microedition.khronos.opengles.GL10;
-
-import org.n52.geoar.newdata.vis.DataSourceVisualization.DataSourceVisualizationGL;
-import org.n52.geoar.ar.view.gl.GLESCamera;
-import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OnInitializeInGLThread;
-import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OpenGLCallable;
-
-import android.graphics.Bitmap;
-import android.opengl.GLES20;
-import android.opengl.GLU;
-import android.opengl.Matrix;
 
 /**
  * 

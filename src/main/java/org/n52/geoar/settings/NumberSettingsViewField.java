@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.settings;
+package main.java.org.n52.geoar.settings;
 
-import java.lang.reflect.Field;
+import android.content.Context;
+import android.view.View;
+import android.widget.EditText;
 
 import org.n52.geoar.newdata.Annotations.Settings.Max;
 import org.n52.geoar.newdata.Annotations.Settings.Min;
 import org.n52.geoar.newdata.Annotations.Settings.NotNull;
 
-import android.content.Context;
-import android.view.View;
-import android.widget.EditText;
+import java.lang.reflect.Field;
 
 public abstract class NumberSettingsViewField<T extends Number> extends EditText
 		implements SettingsViewField<T> {

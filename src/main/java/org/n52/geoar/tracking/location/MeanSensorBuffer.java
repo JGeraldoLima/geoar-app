@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.tracking.location;
-
+package main.java.org.n52.geoar.tracking.location;
 
 /**
  * A simple mean filter for sensor data

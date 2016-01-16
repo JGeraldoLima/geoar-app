@@ -15,6 +15,20 @@
  */
 package org.n52.geoar;
 
+import android.app.Activity;
+import android.app.Application;
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.widget.Toast;
+
+import org.n52.geoar.newdata.PluginLogger;
+import org.n52.geoar.utils.DataSourceLoggerFactory;
+import org.n52.geoar.utils.DataSourceLoggerFactory.LoggerCallable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -26,20 +40,6 @@ import java.io.PrintStream;
 import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.n52.geoar.utils.DataSourceLoggerFactory;
-import org.n52.geoar.utils.DataSourceLoggerFactory.LoggerCallable;
-import org.n52.geoar.newdata.PluginLogger;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import android.app.Activity;
-import android.app.Application;
-import android.content.ActivityNotFoundException;
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.widget.Toast;
 
 public class GeoARApplication extends Application {
 	private static Logger LOG;

@@ -13,11 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
-
-import java.util.List;
-
-import org.n52.geoar.R;
+package main.java.org.n52.geoar.newdata;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -31,6 +27,12 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.n52.geoar.R;
+
+import java.util.List;
+
+import main.java.org.n52.geoar.newdata.PluginHolder;
 
 public class PluginGridAdapter<T extends PluginHolder> extends BaseAdapter {
 

@@ -15,14 +15,6 @@
  */
 package org.n52.geoar.map.view.overlay;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import org.mapsforge.android.maps.Projection;
-import org.mapsforge.core.GeoPoint;
-
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -31,6 +23,14 @@ import android.graphics.Point;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.LineString;
+
+import org.mapsforge.android.maps.Projection;
+import org.mapsforge.core.GeoPoint;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * 

@@ -13,7 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Parcel;
+
+import org.n52.geoar.newdata.Annotations;
+import org.n52.geoar.newdata.CheckList.CheckManager;
+import org.n52.geoar.newdata.DataSource;
+import org.n52.geoar.newdata.Filter;
+import org.n52.geoar.newdata.PluginLoader.PluginInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,24 +39,13 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import org.n52.geoar.newdata.Annotations;
-import org.n52.geoar.newdata.DataSource;
-import org.n52.geoar.newdata.Filter;
-import main.java.org.n52.geoar.GeoARApplication;
-import org.n52.geoar.newdata.CheckList.CheckManager;
-import org.n52.geoar.newdata.PluginLoader.PluginInfo;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.Parcel;
 import dalvik.system.DexClassLoader;
 import dalvik.system.DexFile;
+import main.java.org.n52.geoar.GeoARApplication;
+import main.java.org.n52.geoar.newdata.CheckList;
+import main.java.org.n52.geoar.newdata.DataSourceHolder;
 
-public class InstalledPluginHolder extends PluginHolder {
+public class InstalledPluginHolder extends org.n52.geoar.newdata.PluginHolder {
 
 	private List<DataSourceHolder> mDataSources = new ArrayList<DataSourceHolder>();
 	private File pluginFile;

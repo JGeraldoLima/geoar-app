@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.settings;
-
-import java.lang.reflect.Field;
+package main.java.org.n52.geoar.settings;
 
 import android.view.View;
+
+import java.lang.reflect.Field;
 
 public interface SettingsViewField<T> {
 

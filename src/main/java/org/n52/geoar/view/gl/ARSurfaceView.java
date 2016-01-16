@@ -13,21 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view.gl;
-
-import java.util.List;
-
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.ARObject;
-import org.n52.geoar.ar.view.ARView;
-import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.IRotationMatrixProvider;
-import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.OnInitializeInGLThread;
-import org.n52.geoar.tracking.camera.RealityCamera;
-import org.n52.geoar.tracking.location.AdaptiveLowPassSensorBuffer;
-import org.n52.geoar.tracking.location.LocationHandler;
-import org.n52.geoar.tracking.location.SensorBuffer;
-import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
-import org.n52.geoar.view.InfoView;
+package main.java.org.n52.geoar.view.gl;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -42,7 +28,21 @@ import android.view.Display;
 import android.view.Surface;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.View.MeasureSpec;
+
+import org.n52.geoar.R;
+import org.n52.geoar.ar.view.ARObject;
+import org.n52.geoar.ar.view.ARView;
+import org.n52.geoar.ar.view.gl.ARSurfaceViewRenderer.IRotationMatrixProvider;
+import org.n52.geoar.tracking.camera.RealityCamera;
+import org.n52.geoar.tracking.location.AdaptiveLowPassSensorBuffer;
+import org.n52.geoar.tracking.location.LocationHandler;
+import org.n52.geoar.tracking.location.LocationHandler.OnLocationUpdateListener;
+import org.n52.geoar.tracking.location.SensorBuffer;
+import org.n52.geoar.view.InfoView;
+
+import java.util.List;
+
+import main.java.org.n52.geoar.view.gl.ARSurfaceViewRenderer;
 
 /**
  * View to show virtual information based on the camera's settings. It also

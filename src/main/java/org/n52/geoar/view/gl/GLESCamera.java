@@ -13,14 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view.gl;
+package main.java.org.n52.geoar.view.gl;
+
+import android.opengl.Matrix;
 
 import java.util.Arrays;
 
-import org.n52.geoar.tracking.camera.RealityCamera;
-import org.n52.geoar.view.geoar.Settings;
-
-import android.opengl.Matrix;
+import main.java.org.n52.geoar.tracking.camera.RealityCamera;
 
 /**
  * 

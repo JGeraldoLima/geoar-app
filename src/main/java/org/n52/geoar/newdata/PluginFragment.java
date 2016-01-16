@@ -13,19 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
-
-import java.util.List;
-
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.IntroController;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.newdata.CheckList.OnItemChangedListenerWrapper;
-import org.n52.geoar.newdata.PluginDownloader.OnDataSourceResultListener;
-import org.n52.geoar.newdata.PluginGridAdapter.OnItemCheckedListener;
+package main.java.org.n52.geoar.newdata;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -39,18 +31,16 @@ import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import org.n52.geoar.R;
+
+import java.util.List;
 
 /**
  * Fragment for managing and downloading data sources to use within the
  * application
  * 
  */
-public class PluginFragment extends SherlockFragment {
+public class PluginFragment extends Fragment {
 
 	private static final String CURRENT_TAB_KEY = "current_tab";
 	private GridView mGridViewInstalled;

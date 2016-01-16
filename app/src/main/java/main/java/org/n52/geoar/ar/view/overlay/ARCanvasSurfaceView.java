@@ -15,16 +15,6 @@
  */
 package org.n52.geoar.ar.view.overlay;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.n52.geoar.R;
-import org.n52.geoar.ar.view.ARObject;
-import org.n52.geoar.ar.view.ARView;
-import org.n52.geoar.newdata.PluginActivityContext;
-import org.n52.geoar.tracking.camera.RealityCamera.CameraUpdateListener;
-import org.n52.geoar.tracking.location.LocationHandler;
-
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.graphics.Canvas;
@@ -37,8 +27,16 @@ import android.graphics.Shader;
 import android.location.Location;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
+
+import org.n52.geoar.R;
+import org.n52.geoar.ar.view.ARObject;
+import org.n52.geoar.ar.view.ARView;
+import org.n52.geoar.newdata.PluginActivityContext;
+import org.n52.geoar.tracking.camera.RealityCamera.CameraUpdateListener;
+import org.n52.geoar.tracking.location.LocationHandler;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // TODO XXX
 public class ARCanvasSurfaceView extends View implements CameraUpdateListener {

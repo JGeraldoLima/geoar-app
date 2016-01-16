@@ -15,20 +15,20 @@
  */
 package org.n52.geoar.map.view.overlay;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import android.graphics.Canvas;
+import android.graphics.Point;
+
+import com.vividsolutions.jts.geom.Geometry;
 
 import org.mapsforge.android.maps.MapView;
 import org.mapsforge.android.maps.Projection;
 import org.mapsforge.android.maps.overlay.Overlay;
 import org.mapsforge.core.GeoPoint;
 
-import android.graphics.Canvas;
-import android.graphics.Point;
-
-import com.vividsolutions.jts.geom.Geometry;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 

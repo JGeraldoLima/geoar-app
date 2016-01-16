@@ -15,19 +15,19 @@
  */
 package org.n52.geoar.settings;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import org.n52.geoar.newdata.Annotations.Settings.NoValue;
-import org.n52.geoar.newdata.Annotations.Settings.NotNull;
-
 import android.content.Context;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import org.n52.geoar.newdata.Annotations.Settings.NoValue;
+import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public abstract class SpinnerSettingsViewField<T> extends Spinner implements
 		SettingsViewField<T>, android.widget.AdapterView.OnItemSelectedListener {

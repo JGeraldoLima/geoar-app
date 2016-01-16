@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.view.geoar.gl.mode.features;
+package main.java.org.n52.geoar.view.geoar.gl.mode.features;
 
-import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
+import main.java.org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
 
 public class SphereFeature extends RenderFeature2 {
 

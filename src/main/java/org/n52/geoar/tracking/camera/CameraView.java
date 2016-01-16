@@ -13,11 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.tracking.camera;
-
-import java.util.List;
-
-import org.n52.geoar.R;
+package main.java.org.n52.geoar.tracking.camera;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -31,6 +27,10 @@ import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
+
+import org.n52.geoar.R;
+
+import java.util.List;
 
 /**
  * A View which encapsulates a camera preview. Takes care of freeing all

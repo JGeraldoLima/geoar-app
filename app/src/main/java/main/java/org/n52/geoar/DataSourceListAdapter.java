@@ -15,17 +15,6 @@
  */
 package org.n52.geoar;
 
-import java.util.List;
-
-import org.n52.geoar.ar.view.IntroController;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.newdata.CheckList.OnItemChangedListenerWrapper;
-import org.n52.geoar.newdata.DataSourceHolder;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.InstalledPluginHolder;
-import org.n52.geoar.newdata.PluginLoader;
-import org.n52.geoar.newdata.Visualization;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.util.TypedValue;
@@ -41,6 +30,17 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.n52.geoar.ar.view.IntroController;
+import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
+import org.n52.geoar.newdata.CheckList.OnItemChangedListenerWrapper;
+import org.n52.geoar.newdata.DataSourceHolder;
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.InstalledPluginHolder;
+import org.n52.geoar.newdata.PluginLoader;
+import org.n52.geoar.newdata.Visualization;
+
+import java.util.List;
 
 /**
  * Adapter creating the {@link DataSourceHolder} /

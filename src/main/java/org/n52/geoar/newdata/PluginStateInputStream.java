@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
+
+import org.n52.geoar.newdata.Filter;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectStreamClass;
-
-import org.n52.geoar.newdata.Filter;
 
 /**
  * Specialized {@link ObjectInputStream} allowing to set the {@link ClassLoader}

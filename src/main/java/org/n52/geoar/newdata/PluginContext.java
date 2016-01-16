@@ -15,13 +15,6 @@
  */
 package org.n52.geoar.newdata;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import main.java.org.n52.geoar.GeoARApplication;
-import org.n52.geoar.R;
-
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.AssetManager;
@@ -31,6 +24,14 @@ import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
+
+import org.n52.geoar.R;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 /**
  * A custom {@link Context} wrapping an existing Context, but returning a

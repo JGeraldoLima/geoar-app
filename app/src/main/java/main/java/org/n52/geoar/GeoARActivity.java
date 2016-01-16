@@ -15,19 +15,6 @@
  */
 package org.n52.geoar;
 
-import java.io.IOException;
-
-import org.mapsforge.android.maps.MapActivity;
-import org.mapsforge.android.maps.MapView;
-import org.n52.geoar.ar.view.ARFragment;
-import org.n52.geoar.ar.view.IntroController;
-import org.n52.geoar.map.view.MapFragment;
-import org.n52.geoar.newdata.PluginFragment;
-import org.n52.geoar.newdata.PluginLoader;
-import org.n52.geoar.newdata.Visualization;
-import org.n52.geoar.tracking.camera.RealityCamera;
-import org.n52.geoar.tracking.location.LocationHandler;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -56,6 +43,19 @@ import com.actionbarsherlock.view.ActionProvider;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+
+import org.mapsforge.android.maps.MapActivity;
+import org.mapsforge.android.maps.MapView;
+import org.n52.geoar.ar.view.ARFragment;
+import org.n52.geoar.ar.view.IntroController;
+import org.n52.geoar.map.view.MapFragment;
+import org.n52.geoar.newdata.PluginFragment;
+import org.n52.geoar.newdata.PluginLoader;
+import org.n52.geoar.newdata.Visualization;
+import org.n52.geoar.tracking.camera.RealityCamera;
+import org.n52.geoar.tracking.location.LocationHandler;
+
+import java.io.IOException;
 
 import main.java.org.n52.geoar.AboutDialog;
 import main.java.org.n52.geoar.GeoARApplication;

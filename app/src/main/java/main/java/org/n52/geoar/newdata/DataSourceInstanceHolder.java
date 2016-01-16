@@ -15,14 +15,14 @@
  */
 package org.n52.geoar.newdata;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.SocketException;
-import java.util.HashSet;
-import java.util.Set;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-import main.java.org.n52.geoar.GeoARApplication;
 import org.n52.geoar.R;
 import org.n52.geoar.newdata.CheckList.CheckManager;
 import org.n52.geoar.newdata.CheckList.CheckedChangedListener;
@@ -31,13 +31,14 @@ import org.n52.geoar.settings.SettingsHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
-import android.os.Message;
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.SocketException;
+import java.util.HashSet;
+import java.util.Set;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 public class DataSourceInstanceHolder implements Parcelable {
 

@@ -15,14 +15,6 @@
  */
 package org.n52.geoar.settings;
 
-import java.lang.reflect.Field;
-import java.util.Calendar;
-
-import org.n52.geoar.newdata.Annotations.Settings.NotNull;
-import org.n52.geoar.newdata.Annotations.Settings.Temporal;
-import org.n52.geoar.newdata.Annotations.Settings.Temporal.TemporalType;
-import org.n52.geoar.R;
-
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.TimePickerDialog;
@@ -37,6 +29,14 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TimePicker;
+
+import org.n52.geoar.R;
+import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+import org.n52.geoar.newdata.Annotations.Settings.Temporal;
+import org.n52.geoar.newdata.Annotations.Settings.Temporal.TemporalType;
+
+import java.lang.reflect.Field;
+import java.util.Calendar;
 
 public abstract class DateTimeSettingsViewField<T> implements SettingsViewField<T>,
 		OnDateSetListener, OnTimeSetListener {

@@ -13,12 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.ar.view;
+package main.java.org.n52.geoar.view;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.vividsolutions.jts.geom.Geometry;
 
-import main.java.org.n52.geoar.GeoARApplication;
 import org.n52.geoar.R;
 import org.n52.geoar.alg.proj.MercatorPoint;
 import org.n52.geoar.alg.proj.MercatorProj;
@@ -40,7 +38,10 @@ import org.n52.geoar.view.geoar.gl.mode.RenderFeature2;
 import org.n52.geoar.view.geoar.gl.mode.features.CubeFeature2;
 import org.n52.geoar.view.geoar.gl.mode.features.SphereFeature;
 
-import com.vividsolutions.jts.geom.Geometry;
+import java.util.ArrayList;
+import java.util.List;
+
+import main.java.org.n52.geoar.GeoARApplication;
 
 /**
  * 

@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.map.view.overlay;
-
-import org.mapsforge.core.GeoPoint;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.SpatialEntity2;
-import org.n52.geoar.newdata.Visualization;
+package main.java.org.n52.geoar.view.overlay;
 
 import android.graphics.drawable.Drawable;
 
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.Point;
+
+import org.mapsforge.core.GeoPoint;
+import org.n52.geoar.newdata.DataSourceInstanceHolder;
+import org.n52.geoar.newdata.SpatialEntity2;
+import org.n52.geoar.newdata.Visualization;
 
 /**
  * 

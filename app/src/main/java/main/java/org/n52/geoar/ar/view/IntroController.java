@@ -15,12 +15,6 @@
  */
 package org.n52.geoar.ar.view;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-
-import org.n52.geoar.R;
-
 import android.app.Activity;
 import android.util.SparseArray;
 import android.view.Gravity;
@@ -29,6 +23,12 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout.LayoutParams;
+
+import org.n52.geoar.R;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * 

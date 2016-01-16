@@ -15,13 +15,13 @@
  */
 package org.n52.geoar.settings;
 
-import java.lang.reflect.Field;
-
-import org.n52.geoar.newdata.Annotations.Settings.NotNull;
-
 import android.content.Context;
 import android.view.View;
 import android.widget.EditText;
+
+import org.n52.geoar.newdata.Annotations.Settings.NotNull;
+
+import java.lang.reflect.Field;
 
 public class StringSettingsViewField extends EditText implements SettingsViewField<String> {
 

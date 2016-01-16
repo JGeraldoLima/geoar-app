@@ -15,14 +15,6 @@
  */
 package org.n52.geoar.newdata;
 
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.n52.geoar.R;
-import org.n52.geoar.settings.SettingsView;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Parcel;
@@ -32,6 +24,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.actionbarsherlock.app.SherlockActivity;
+
+import org.n52.geoar.R;
+import org.n52.geoar.settings.SettingsView;
+
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Activity to set data source instance settings and its filter settings. Also
