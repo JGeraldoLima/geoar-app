@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar;
+package main.java.org.n52.geoar;
 
 import java.io.IOException;
 
 import org.mapsforge.android.maps.MapActivity;
 import org.mapsforge.android.maps.MapView;
+import org.n52.geoar.R;
 import org.n52.geoar.ar.view.ARFragment;
 import org.n52.geoar.ar.view.IntroController;
 import org.n52.geoar.map.view.MapFragment;

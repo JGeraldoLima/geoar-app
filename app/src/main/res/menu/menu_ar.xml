@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Actionprovider will be set in activity -->
+    <item
+        android:id="@+id/item_ar_datasource"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/item_map"
+        android:icon="@drawable/ic_menu_mapmode"
+        android:showAsAction="always"
+        android:title="@string/map"/>
+
+
+</menu>

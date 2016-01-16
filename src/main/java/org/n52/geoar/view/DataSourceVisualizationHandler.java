@@ -18,7 +18,7 @@ package org.n52.geoar.ar.view;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.n52.geoar.GeoARApplication;
+import main.java.org.n52.geoar.GeoARApplication;
 import org.n52.geoar.R;
 import org.n52.geoar.alg.proj.MercatorPoint;
 import org.n52.geoar.alg.proj.MercatorProj;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar.newdata;
+package main.java.org.n52.geoar.newdata;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -27,18 +27,17 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-
-import com.actionbarsherlock.app.SherlockActivity;
 
 /**
  * Activity to set data source instance settings and its filter settings. Also
  * responsible for updating the data source instance.
  * 
  */
-public class DataSourceInstanceSettingsDialogActivity extends SherlockActivity {
+public class DataSourceInstanceSettingsDialogActivity extends AppCompatActivity {
 
 	public abstract static class SettingsResultListener implements Parcelable {
 		private static List<WeakReference<SettingsResultListener>> instances = new ArrayList<WeakReference<SettingsResultListener>>();

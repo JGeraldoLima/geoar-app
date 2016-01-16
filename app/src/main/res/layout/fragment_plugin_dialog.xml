@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            style="@style/formGroup"
+            android:text="@string/plugin_details" />
+
+        <TextView
+            style="@style/formLabel"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/formView"
+            android:text="TextView" />
+
+        <TextView
+            style="@style/formLabel"
+            android:text="@string/publisher" />
+
+        <TextView
+            android:id="@+id/textViewPublisher"
+            style="@style/formView"
+            android:text="TextView" />
+
+        <TextView
+            style="@style/formLabel"
+            android:text="@string/version" />
+
+        <TextView
+            android:id="@+id/textViewVersion"
+            style="@style/formView"
+            android:text="TextView" />
+
+        <TextView
+            style="@style/formLabel"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            style="@style/formView"
+            android:text="TextView" />
+
+        <TextView
+            style="@style/formGroup"
+            android:text="@string/provided_data_sources" />
+
+        <TextView
+            android:id="@+id/textViewDataSources"
+            style="@style/formView"
+            android:text="TextView" />
+    </LinearLayout>
+
+</ScrollView>

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar;
+package main.java.org.n52.geoar;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,6 +27,7 @@ import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.n52.geoar.R;
 import org.n52.geoar.utils.DataSourceLoggerFactory;
 import org.n52.geoar.utils.DataSourceLoggerFactory.LoggerCallable;
 import org.n52.geoar.newdata.PluginLogger;

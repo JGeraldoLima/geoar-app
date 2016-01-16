@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:drawableLeft="@drawable/abs__ic_clear"
+                android:drawableLeft="@drawable/abc_ic_clear_mtrl_alpha"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"

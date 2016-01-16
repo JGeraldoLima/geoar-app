@@ -13,18 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.n52.geoar;
-
-import java.util.List;
-
-import org.n52.geoar.ar.view.IntroController;
-import org.n52.geoar.newdata.CheckList.OnCheckedChangedListener;
-import org.n52.geoar.newdata.CheckList.OnItemChangedListenerWrapper;
-import org.n52.geoar.newdata.DataSourceHolder;
-import org.n52.geoar.newdata.DataSourceInstanceHolder;
-import org.n52.geoar.newdata.InstalledPluginHolder;
-import org.n52.geoar.newdata.PluginLoader;
-import org.n52.geoar.newdata.Visualization;
+package main.java.org.n52.geoar;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -42,6 +31,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.n52.geoar.R;
+import org.n52.geoar.newdata.DataSourceHolder;
+
 /**
  * Adapter creating the {@link DataSourceHolder} /
  * {@link DataSourceInstanceHolder} tree list. Allows to manage settings and
@@ -55,7 +47,7 @@ public class DataSourceListAdapter extends BaseExpandableListAdapter {
 	 * 
 	 */
 	private class DataSourceInstanceViewHolder {
-		DataSourceInstanceHolder dataSourceInstance;
+		org.n52.geoar.newdata.DataSourceInstanceHolder dataSourceInstance;
 		ImageView imageViewSettings;
 		TextView textView;
 		TextView textViewDetails;
@@ -67,7 +59,7 @@ public class DataSourceListAdapter extends BaseExpandableListAdapter {
 				if (dataSourceInstance.isChecked() != isChecked) {
 					dataSourceInstance.setChecked(isChecked);
 					notifyDataSetChanged();
-					IntroController.finishTaskIfActive(9);
+					org.n52.geoar.ar.view.IntroController.finishTaskIfActive(9);
 				}
 			}
 		};
@@ -151,7 +143,7 @@ public class DataSourceListAdapter extends BaseExpandableListAdapter {
 	 * 
 	 */
 	private class RemoveUnselectedInstancesViewHolder {
-		DataSourceHolder dataSource;
+		org.n52.geoar.newdata.DataSourceHolder dataSource;
 		TextView textView;
 
 		OnClickListener clickListener = new OnClickListener() {
@@ -168,7 +160,7 @@ public class DataSourceListAdapter extends BaseExpandableListAdapter {
 
 	private Context mContext;
 	private LayoutInflater mInflater;
-	private List<DataSourceHolder> mDataSources;
+	private List<org.n52.geoar.newdata.DataSourceHolder> mDataSources;
 
 	private OnCheckedChangedListener<InstalledPluginHolder> mPluginChangedListener = new OnCheckedChangedListener<InstalledPluginHolder>() {
 
@@ -178,7 +170,7 @@ public class DataSourceListAdapter extends BaseExpandableListAdapter {
 			mDataSources = PluginLoader.getDataSources();
 			notifyDataSetInvalidated();
 			if (newState == false) {
-				for (DataSourceHolder dataSource : item.getDataSources()) {
+				for (org.n52.geoar.newdata.DataSourceHolder dataSource : item.getDataSources()) {
 					dataSource.getInstances().removeOnItemChangeListener(
 							dataSourceItemChangedListener);
 					dataSource.getInstances().removeOnCheckedChangeListener(

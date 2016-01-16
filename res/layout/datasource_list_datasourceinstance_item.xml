@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?attr/dropDownItemStyle"
+    style="@style/Base.TextAppearance.AppCompat.Widget.DropDownItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:addStatesFromChildren="true"
@@ -42,7 +42,7 @@
 
         <TextView
             android:id="@+id/textView"
-            style="?attr/dropDownItemStyle"
+            style="@style/Base.TextAppearance.AppCompat.Widget.DropDownItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="marquee"

@@ -15,7 +15,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@drawable/abs__list_divider_holo_dark" />
+        android:background="@drawable/abc_list_divider_mtrl_alpha" />
 
     <Button
         android:id="@+id/buttonMore"

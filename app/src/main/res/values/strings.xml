@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeoAR</string>
+    <string name="gps_nicht_aktiviert">GPS not enabled</string>
+    <string name="gps_aktiviert">GPS enabled</string>
+    <string name="warte_auf_gps_verf_gbarkeit">Waiting for GPS</string>
+    <string name="ok">OK</string>
+    <string name="magnetic_field_not_calibrated">Magnetic field sensor needs calibration</string>
+    <string name="accel_not_calibrated">Accelerometer needs calibration</string>
+    <string name="magnetic_field_not_started">Could not start magnetic field sensor</string>
+    <string name="accel_not_started">Could not start accelerometer</string>
+    <string name="cancel">Cancel</string>
+    <string name="data_sources">Data Sources</string>
+    <string name="manual_position">Manual location override</string>
+    <string name="not_zoomed_in">Data requires closer zoom</string>
+    <string name="connection_error">Connection error</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="camera_not_available">Could not initialize camera</string>
+    <string name="error">Error</string>
+    <string name="info_use">Make sure that the magnetic field sensors are not disturbed when using the augmented reality view.
+		Shaking the device may reset the sensors.\n© 2013 52°North, visit http://52north.org/android</string>
+    <string name="advice">Note</string>
+    <!-- Codebase Strings -->
+    <string name="cb_menu_refresh">Refresh</string>
+    <!-- About Dialog -->
+    <string name="about_legal_text">This development is supported by the European Commissions Seventh
+		Framework Programme (FP7) via the project GeoViQua (QUAlity aware VIsualisation for the Global Earth Observation system of systems), grant
+		number 265178.</string>
+    <string name="about_libs_text">Uses mapsforge - free mapping and navigation tools - API, see http://code.google.com/p/mapsforge/</string>
+    <string name="about_text">More information at\nhttp://52north.org/android \n\nGeoAR is part of the 52°North Geostatistics Community: \nhttp://52north.org/communities/geostatistics/\n</string>
+    <string name="about_contactNames"><i>Daniel Nüst (d.nuest@52north.org)</i></string>
+    <string name="about_developerNames"><i>Arne de Wall, Holger Hopmann</i></string>
+    <string name="about_titel">52°North GeoAR Augmented Reality Browser for Android</string>
+    <string name="about_version_text">Version ${buildNumber}</string>
+    <!-- Map Strings -->
+    <string name="map_item_camera">CameraView</string>
+    <string name="add_instance">Add Instance...</string>
+    <string name="remove_unused">Remove unused</string>
+    <string name="filter_settings">Filter Settings</string>
+    <string name="general_settings">General Settings</string>
+    <string name="plugin_details">Plugin Details</string>
+    <string name="publisher">Publisher</string>
+    <string name="version">Version</string>
+    <string name="description">Description</string>
+    <string name="provided_data_sources">Provided Data Sources</string>
+    <string name="name">Name</string>
+    <string name="map">Map</string>
+    <string name="select_data_sources">Manage Datasources</string>
+    <string name="more_">More...</string>
+    <string name="installed">Installed</string>
+    <string name="download">Download</string>
+    <string name="info_failed_email">We are sorry, but GeoAR raised an unhandled exception during its last execution.\nFortunately, details on this error were recorded!\nPlease help us improving GeoAR by sending us an error report.\n(This will open your E-Mail App)</string>
+    <string name="sorry">Sorry!</string>
+    <string name="text_error_report">I\'m very happy to help improving GeoAR!</string>
+    <string name="text_feedback_report">Please add your feedback here</string>
+    <string name="send_report">Send Report</string>
+    <string name="could_not_find_email_application">Could not find email application</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="about">About</string>
+    <string name="contact">Contact</string>
+    <string name="development_credits">Development Credits</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="activated">Activated</string>
+    <string name="unknown_publisher">Unknown Publisher</string>
+    <string name="no_value"><i>No Value</i></string>
+    <string name="update_available">New Version</string>
+    <string name="add">Add</string>
+    <string name="requesting_data">Requesting Data</string>
+    <string name="about_geoar">About GeoAR</string>
+    <string name="show_location">Show Location</string>
+    <string name="waiting_for_location_fix">Waiting for location fix</string>
+    <string name="intro_start_title">Welcome to GeoAR!</string>
+    <string name="intro_start_desc">You have not installed any DataSources at the moment. DataSources are essential for viewing data in GeoAR.\nIn order to install a DataSource, just follow the steps in this introduction.</string>
+    <string name="intro_task_1">#1 Install DataSources</string>
+    <string name="intro_desc_1_1">Under the DataSource button you will find all the DataSources you have activated.\nAt the moment you got no DataSource installed. To install a DataSource, click on the highlighted DATA SOURCES button in the upper ActionBar. </string>
+    <string name="intro_desc_1_2">Any installed and activated DataSource will be listed here.\n\nJust click on MORE... in order to come to the place where DataSouces were handled. </string>
+    <string name="intro_desc_1_3">This area shows up two tabs with installed and downloadable DataSources.\n\nClick on the DOWNLOAD tab to get a list of DataSources you are able to download</string>
+    <string name="intro_desc_1_4">Now its up to you to make a decision which DataSource you would like to install.</string>
+    <string name="intro_task_2">#2 Select DataSource</string>
+    <string name="intro_desc_2_1">You have successfully downloaded a DataSource! In order to use these, they must be activated.\n\nGo back to the INSTALLED tab, where you will find your DataSource.</string>
+    <string name="intro_desc_2_2">In this view all the downloaded DataSources are listed. These can be enabled and disabled upon your request.\n\nIn order to enable/disable a DataSource, click on the respective field or on the corresponding checkbox in the lower left of the field.</string>
+    <string name="intro_task_3">#3 Activate DataSource</string>
+    <string name="intro_desc_3_1">Your selected DataSource is activated. Go back to the Map View.</string>
+    <string name="intro_desc_3_2">Activate in View</string>
+    <string name="intro_desc_3_3">Click on checkbox</string>
+    <string name="intro_desc_3_4">Click on the checkbox</string>
+</resources>
